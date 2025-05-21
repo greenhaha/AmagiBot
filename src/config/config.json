@@ -1,0 +1,46 @@
+{
+    "mongodb": {
+        "uri": "mongodb://localhost:27017/",
+        "database": "chatbot_db"
+    },
+    "llm": {
+        "model_name": "gpt-3.5-turbo",
+        "temperature": 0.7,
+        "max_tokens": 2000,
+        "stop_sequences": ["\n\n", "用户:", "机器人:"]
+    },
+    "memory": {
+        "max_memories": 1000,
+        "decay_rate": 0.1,
+        "min_similarity": 0.7,
+        "max_context_length": 2000
+    },
+    "emotion": {
+        "update_interval": 300,
+        "decay_rate": 0.05,
+        "max_intensity": 1.0,
+        "min_intensity": 0.0
+    },
+    "knowledge": {
+        "model_name": "gpt-3.5-turbo",
+        "temperature": 0.7,
+        "max_tokens": 2000,
+        "knowledge_dir": "data",
+        "file_extensions": [".txt"],
+        "chunk_size": 1000,
+        "overlap": 200,
+        "confidence_threshold": 0.6,
+        "max_key_points": 5
+    },
+    "dialogue": {
+        "max_history": 10,
+        "context_window": 5,
+        "response_timeout": 30,
+        "retry_attempts": 3
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "chatbot.log"
+    }
+} 

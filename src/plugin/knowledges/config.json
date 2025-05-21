@@ -1,0 +1,31 @@
+{
+    "model_name": "gpt-3.5-turbo",
+    "temperature": 0.7,
+    "max_tokens": 2000,
+    "knowledge_dir": "data",
+    "file_extensions": [".txt"],
+    "chunk_size": 1000,
+    "overlap": 200,
+    "categories": [
+        "技术",
+        "科学",
+        "历史",
+        "文化",
+        "艺术",
+        "哲学",
+        "心理学",
+        "医学",
+        "经济",
+        "政治",
+        "教育",
+        "体育",
+        "娱乐",
+        "其他"
+    ],
+    "confidence_threshold": 0.6,
+    "max_key_points": 5,
+    "storage": {
+        "use_memory_system": true,
+        "use_knowledge_base": true
+    }
+} 
